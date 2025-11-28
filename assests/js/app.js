@@ -7,7 +7,7 @@ async function getdata(da){
     container.innerHTML="<p style='text-align:center;color:white'>Loading movies..</p>"
     try{
         
-       const response=await fetch(`http://www.omdbapi.com/?s=${da}&apikey=49da69f5`)
+       const response=await fetch(`https://www.omdbapi.com/?s=${da}&apikey=49da69f5`)
        const data= await response.json()
        
       if(data){
